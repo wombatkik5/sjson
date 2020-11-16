@@ -25,6 +25,20 @@ uint64_t Sjson::getPrev(uint64_t p)
 }
 
 /* Actual querying functions. */
+void Sjson::queryArrValues(uint64_t id, uint64_t cnt)
+{
+	assert(id < size || cnt < queryDegree(id));
+
+	if(queryType(id) != 3)
+	{
+		std::cout << "Invalid." << std::endl;
+		return;
+	}
+
+	queryValue(queryChild(id, cnt));
+}
+
+
 uint64_t Sjson::queryChild(uint64_t id, uint64_t num)
 {
 	assert(id < size);

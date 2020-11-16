@@ -43,6 +43,7 @@ public:
 	void parseJson(std::ifstream &, std::unordered_map<std::string, uint64_t> &);
 
 	/* Defined in query.cpp. */
+	void queryArrValues(uint64_t, uint64_t);
 	uint64_t queryChild(uint64_t, uint64_t);
 	uint64_t queryDegree(uint64_t);
 	std::string queryName(uint64_t);

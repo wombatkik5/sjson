@@ -36,7 +36,7 @@ Once the representation is constructed, type operations such as
 
 - s: get size (valid for arrays).
 
-- v: get value (valid for objects).
+- v: get value,
 
 # License
 
